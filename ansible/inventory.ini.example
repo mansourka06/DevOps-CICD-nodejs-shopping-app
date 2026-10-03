@@ -1,0 +1,8 @@
+[bastion]
+bastion ansible_host=BASTION_PUBLIC_IP ansible_user=ubuntu
+
+[app]
+app ansible_host=APP_PRIVATE_IP ansible_user=ubuntu
+
+[all:vars]
+ansible_ssh_common_args='-o ProxyJump=ubuntu@BASTION_PUBLIC_IP'
