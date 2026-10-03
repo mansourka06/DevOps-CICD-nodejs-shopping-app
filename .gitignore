@@ -1,0 +1,46 @@
+############################
+# Node.js
+############################
+app/src/node_modules/
+app/src/npm-debug.log*
+app/src/yarn-debug.log*
+yarn-error.log*
+
+############################
+# Environment / Secrets
+############################
+.env
+.env.*
+/env/prod*
+terraform/*.tfvars
+
+############################
+# Terraform
+############################
+**/.terraform/*
+**/*.tfstate
+**/*.tfstate.backup
+*.tfplan
+crash.log
+
+############################
+# Ansible
+############################
+.ansible/
+*.retry
+ansible.log
+ansible/inventory.ini
+
+
+############################
+# Docker
+############################
+*.tar
+
+############################
+# IDE / OS
+############################
+.vscode/
+.idea/
+.DS_Store
+!terraform-backend/terraform.tfvars
